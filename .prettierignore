@@ -1,0 +1,7 @@
+node_modules
+dist
+session
+data
+state.json
+*.log
+package-lock.json

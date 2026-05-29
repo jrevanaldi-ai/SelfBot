@@ -1,0 +1,29 @@
+{
+  "name": "bot-baileys",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build --silent && node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "check": "tsc --noEmit",
+    "format": "prettier --write ."
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "@itsliaaa/baileys": "^0.3.12",
+    "dotenv": "^16.4.7",
+    "pino": "^9.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "prettier": "^3.4.2",
+    "tsx": "^4.22.3",
+    "typescript": "^6.0.3"
+  }
+}
